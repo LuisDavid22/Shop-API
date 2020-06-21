@@ -1,0 +1,31 @@
+{
+  "name": "shop-api",
+  "version": "1.0.0",
+  "description": "a restful api of an online shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "rest",
+    "restful"
+  ],
+  "author": "Luis Laureano",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.19",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
