@@ -13,6 +13,7 @@ mongoose.connect('mongodb+srv://admin:admin@node-rest-shop-lmob2.mongodb.net/tes
 });
 
 app.use(morgan('dev'));
+app.use('/uploads', express.static('uploads'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
